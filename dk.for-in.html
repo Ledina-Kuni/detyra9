@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> detyre klase for in</title>
+    </head>
+    <body>
+
+    <p id="uni"></p>
+    <script>
+
+ const universitet = {emri:"UPT", fakulteti:"FTI", deget:3, klasat:307, studenti:"Ledina"};
+ 
+ let txt = "";
+ for (let x in universitet) {  
+  txt += universitet[x] + " ";
+ }
+
+ document.getElementById("uni").innerHTML = txt;
+       </script>
+    </body>
+</html>

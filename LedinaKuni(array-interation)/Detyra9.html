@@ -1,0 +1,87 @@
+<html>
+<body>
+<head>
+    <title> array</title>
+</head>
+ <!-- Array forEach() -->
+<p>Afisho moshen:</p>
+<p id="mosha"></p>
+<script>
+  const mosha = [12, 25, 9, 21, 16, 64, 45, 39];
+  let text = "";
+mosha.forEach(myFunction);
+  document.getElementById("mosha").innerHTML = text;
+
+function myFunction(value, index, array) {
+  text += value + "<br>"; 
+}
+</script>
+
+<!-- Array map() -->
+ <p>UpperCase</p>
+ <p id="upperCase"></p>
+ <script>
+   const emri = ["Bob", "Patrick", "Nora", "Sindy"];
+   const emriUpper = emri.map(upperCase);
+ document.getElementById("upperCase").innerHTML = emriUpper;
+
+function upperCase(emriUpper){
+    return emriUpper.toUpperCase() + " ";
+}
+</script>
+
+<!-- Array flatmap() -->
+ <p> Numri në katror</p>
+ <p id="flat"></p>
+ <script>
+   const numbers = [1, 2, 3, 4];
+   const Squared = numbers.flatMap(num => [num ** 2]);
+ document.getElementById("flat").innerHTML = Squared;
+
+function numri(Squared){
+    return Squared + " ";
+}
+</script>
+
+<!-- Array filter() -->
+ <p>Array Filter</p>
+ <p id="filter"></p>
+ <script>
+   var numra = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+   var result = numra.filter(number => number > 5); 
+ document.getElementById("filter").innerHTML = result;
+
+function num(result){
+    return result + " ";
+}
+ </script>
+
+<!-- Array reduce() -->
+ <p>Array reduce()</p>
+<p id="sum"></p>
+<script>
+   const a = [2, 4, 6];
+   const sum = a.reduce(sum2, 0);
+ document.getElementById("sum").innerHTML = sum;
+
+function sum2(a, x) {
+  return a + x;
+}
+</script>
+
+<!-- Array reduceRight() -->
+ <p>Array reduceRight()</p>
+ <p id="reduce"></p>
+ <script>
+  let numb = [1, 2, 3, 4];
+  let sh = numb.reduceRight(sh_reducer);
+ document.getElementById("reduce").innerHTML = sh; 
+
+ function sh_reducer(x, y) {
+  return x - y;
+}
+
+
+ </script>
+</body>
+</html>

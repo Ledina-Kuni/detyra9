@@ -1,0 +1,22 @@
+p{
+    position: static;
+    display: block;
+}
+h3{
+    position: relative;
+    display: inline;
+}
+a{
+    position: absolute;
+    padding-top: 100px;
+    display: inline-block;
+}
+img{
+    position: fixed ;
+    margin-top: 120px;
+    display: block;
+}
+ol{
+    position: sticky ;
+    display: none;
+}

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>DETYRE 1</title>
+        <style>
+            .flex-container{
+             list-style-type: none;
+             background-color: lightpink;
+             padding: 0px;
+             margin: 0px;
+             overflow: hidden;
+            }
+            .flex-container li{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+            text-align: center;
+            }
+           .flex-container li:hover{
+            background-color: pink;
+            color: lightsalmon;
+           }
+            .item1 {
+                background-color: rgb(221, 160, 182);
+            } 
+
+            .link{
+                display: flex;
+                flex-direction: column; width: 50px;
+                background-color: lightpink;
+                margin: 5px;
+                padding: 5px;
+                gap: 20px;
+            }
+           .link a img {
+             width: 42px;
+             height: 42px;
+             transition: transform 0.3s ease;
+             }
+
+            .link a:hover img {
+             transform: translateX(100px);
+            }
+            h1{
+                margin-left: 655px;
+                color: palevioletred;
+            }
+ 
+        </style>
+    </head>
+    <body style="background-image: url('photo1.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <body>
+           <ul class="flex-container">
+           <li class="item1"><h4>Home</h4></li>
+           <li><h4>Aktivitete</h4></li>
+           <li><h4>Rezervime</h4></li>
+           <li><h4>Informacion</h4></li>
+           </ul>
+
+           <div class="link">
+             <a  href="https://www.facebook.com/" target="_blank"><img src="fb.png" width="20px" alt="facebook" style="width:42px;height:42px;"></a>
+             <a  href="https://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="instagram" style="width:42px;height:42px;"></a>
+             <a  href="https://mail.google.com" target="_blank"><img src="gmail.png" alt="gmail" style="width:42px;height:42px;"></a>
+           </div>
+           <h1>Japoni</h1>
+    </body>
+</html>

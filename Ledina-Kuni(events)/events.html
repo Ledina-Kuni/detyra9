@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Detyra 8 (Evente)</title>
+    </head>
+    <body>
+
+      <!-- onmouseOver dhe onmouseOut -->
+        <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">MouseOver/Out</h1>
+        <script>
+        function mouseOver() {
+          document.getElementById("demo").style.color = "red";
+        }
+        function mouseOut() {
+          document.getElementById("demo").style.color = "pink";
+        }
+        </script>
+
+      <!-- onkaydown -->
+      <input type="text" onkeydown="myFunction()">
+
+      <p id="onkaydown"></p>
+      
+      <script>
+      function myFunction() {
+        document.getElementById("onkaydown").innerHTML = "You pressed a key";
+      }
+      </script>
+
+      <!-- onload -->
+      <img src="photo.jpg" onload="loadImg()" width="100" height="100">
+
+      <script>
+      function loadImg() {
+        alert("Image is loaded");
+      }
+      </script>
+    </body>
+</html>

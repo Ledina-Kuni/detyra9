@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>string</title>
+    </head>
+    <body>
+     <!-- String charCodeAt() -->
+     <p>Gjatesia</p>
+     <p id="gjat"></p>
+     <script>
+      var text = "djvnbvjfdvbvbb";
+       document.getElementById("gjat").innerHTML = text.length;
+     </script>
+       
+      <!-- String at() -->
+       <p>Pozicioni i shkronjes</p>
+       <p id="string"></p>
+      <script>
+        const name = "Programim";
+        var letter = name.at(5);
+         document.getElementById("string").innerHTML = letter;
+      </script>
+
+      <!-- String [ ] -->
+      <p>Shkronja e pare eshte:</p>
+      <p  id="tekst"></p>
+      <script>
+        var text = "student";
+         document.getElementById("tekst").innerHTML = text[0];
+      </script>
+      
+      <!-- String slice() -->
+      <p>Pjesa e prerë e vargut është:</p>
+      <p id="string1"></p>
+      <script>
+        var text = "studenti, shkolla, klasa";
+        var part = text.slice(0,10);
+         document.getElementById("string1").innerHTML = part; 
+      </script>
+
+      <!-- substring() -->
+      <p>Metoda substring():</p>
+      <p id="sub"></p>
+      <script>
+      var str = "Janar, shkurt, mars";
+       document.getElementById("sub").innerHTML = str.substring(7,13);
+      </script>
+
+      <!-- substr() -->
+      <p>Metoda substr():</p>
+      <p id="substr"></p>
+      <script>
+      var str = "E hene, E marte, E merkure";
+       document.getElementById("substr").innerHTML = str.substr(7);
+      </script>
+    </body>
+</html>

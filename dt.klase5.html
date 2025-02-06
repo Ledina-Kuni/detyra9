@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>detyre klase 5</title>
+        <style>
+        .box{
+            border: 5px solid yellow;
+            border-radius: 20px;
+            width: 600px;
+            height: 50px;
+        }
+            @keyframes loading {
+               from{
+                      width: 10px;
+               }
+               to {
+                     width: 600px;
+               }
+            }
+        .loading{
+              animation-name: loading;
+              animation-duration: 8s;
+              background-color: yellow;
+              height: 50px;
+              animation-iteration-count: infinite;
+              width: 10px;
+           } 
+        </style>
+    </head>
+    <body>
+        <div class="box">
+         <div class="loading"></div>
+        </div>
+    </body>
+</html>

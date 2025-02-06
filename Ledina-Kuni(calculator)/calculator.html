@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Detyra </title>
+    </head>
+    <body>
+        <style>
+        div{ 
+              margin: auto;
+              border: 1px solid black;
+              padding: 50px;
+              background-color: antiquewhite; width: 200px; height: 350px;
+        }
+        .b1{
+            background-color: green;
+            color: white;
+        }
+        .b2{
+            background-color: red;
+            color: white;
+        }
+        </style>
+        <div>
+            <h2>Calculator</h2>
+        <form method="post" action="server" enctype="multipart/form-data">
+            <label for="Number 1">Enter First Number:</label><br>
+            <input type="number" placeholder="First Number" id="num1"/><br><br>
+            <label for="Number 2">Enter Second Number:</label><br>
+            <input type="number" placeholder="Second Number" id="num2"/><br><br>
+            <label for="button">Choose any Operator:</label><br>
+            <select id="operators">
+                <option value="None">None</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select><br><br>
+            <button class="b1" type="button" onclick="myfunction()">Calculate</button>
+            <button class="b2" type="button" onclick="clearfunction()">Clear</button><br><br>
+            <label for="Name">The Answer is:</label><br>
+            <input type="number" id="result">
+        </form>
+        </div>
+        <script>
+
+            function myfunction(){
+
+                var num1 = parseInt(document.getElementById('num1').value);
+                var num2 = parseInt(document.getElementById('num2').value);
+                var operators = document.getElementById('operators').value;
+
+                 if( operators === '+'){
+
+                    document.getElementById('result').value = num1 + num2;
+
+                }
+                 else if( operators === '-'){
+
+                    document.getElementById('result').value = num1 - num2;
+
+                }
+                 else if( operators === '*'){
+
+                    document.getElementById('result').value = num1 * num2;
+
+                }
+                 else if( operators === '/'){
+
+                   document.getElementById('result').value = num1 / num2;
+
+                }
+            }
+            function clearfunction(){
+                
+               document.getElementById("num1").value = " ";
+               document.getElementById("num2").value = " ";
+               document.getElementById("operators").value = "None";
+               document.getElementById("result").value = " ";
+            }
+        </script>
+    </body>
+</html>

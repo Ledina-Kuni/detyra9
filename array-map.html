@@ -1,0 +1,37 @@
+
+<html>
+<body>
+    <head>
+        <title> array map</title>
+    </head>
+
+ <!-- The map() Method -->
+
+ <!-- <p>Create a new array by performing a function on each array element:</p>
+ <p id="demo"></p>
+
+ <script>
+  const numbers1 = [45, 4, 9, 16, 25];
+  const numbers2 = numbers1.map(myFunction);
+
+  document.getElementById("demo").innerHTML = numbers2;
+
+ function myFunction(value, index, array) {
+  return value * 2;
+ }
+ </script> -->
+
+<!-- flatMap -->
+ <p>flatMap</p>
+ <p id="demo"></p>
+
+ <script>
+  const myArr = ["jony", "Jin", "tom", "mini"];
+  const newArr = myArr.flatMap(x => [x, x.toUpperCase()]);
+
+  document.getElementById("demo").innerHTML = newArr;
+
+
+ </script>
+</body>
+</html>
